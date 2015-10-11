@@ -1,0 +1,159 @@
+/*
+* 	Owl Carousel Owl Demo Theme 
+*	v1.3.2
+*/
+
+.owl-theme .owl-controls{
+	text-align: center;
+	position:absolute;
+	left:auto;
+	top:50%;
+	z-index:999;
+	width:100%;
+}
+.ocs .owl-controls{
+	text-align: center;
+	position:absolute;
+	left:auto;
+	top:-80px;
+	z-index:999;
+	width:100%;
+}
+.ocs .owl-prev {
+	left:19% !important;
+}
+.ocs .owl-next {
+	right:19% !important;
+}
+.about-stats .owl-controls {
+	text-align: center;
+	position:absolute;
+	left:auto;
+	top:0;
+	z-index:999;
+	width:100%;
+}
+.about-stats2 .owl-controls{ 
+	text-align: center;
+	position:absolute;
+	left:auto;
+	top:-30px;
+	z-index:999;
+	width:100%;
+}
+.about-stats .owl-next,.about-stats2 .owl-next {
+    margin-top: 0;
+    left: 50px;
+	right:auto;
+	position:relative;
+}
+.about-stats .owl-prev,.about-stats2 .owl-prev {
+    left: auto;
+    margin-top: 0;
+	position:relative;
+}
+.btn-fix .owl-controls {
+	left:0 !important;
+}
+/* Styling Next and Prev buttons */
+.owl-buttons {
+	width:100%;
+}
+.owl-theme .owl-controls .owl-buttons div {
+	display:block;
+	zoom: 1;
+	border-radius: 50%;
+    height: 40px;
+	z-index:999;
+	position:absolute;
+	float:left;
+    width: 40px;
+	border:1px solid #e8e7e3;
+	transition: all 0.2s ease-in-out 0s;
+	*display: inline;/*IE7 life-saver */
+	
+}
+.owl-next {
+    background: url("../images/arrows.png") no-repeat scroll -20px 14px;
+	margin-top:-15px;
+	right:44px;
+}
+.owl-next:hover {
+    background: url("../images/arrows.png") no-repeat scroll 16px 14px;
+}
+.owl-prev {
+    background: url("../images/arrows.png") no-repeat scroll 16px -21px;
+	margin-top:-15px;
+	left:44px;
+}
+.owl-prev:hover {
+    background: url("../images/arrows.png") no-repeat scroll -20px -21px;
+}
+.rel-gal .owl-theme .owl-controls {
+	top:35%;
+}
+.rel-gal .owl-prev {
+	width:22px !important;
+	line-height:100px;
+	overflow:hidden;
+	position:absolute;
+	left:-55px;
+	height:44px !important;
+    background: url("../images/pre.png") no-repeat scroll center center;
+}
+.rel-gal .owl-next {
+	width:22px !important;
+	line-height:100px;
+	overflow:hidden;
+	position:absolute;
+	right:-55px;
+	height:44px !important;
+    background: url("../images/nex.png") no-repeat scroll center center;
+}
+
+/****/
+
+/* Styling Pagination*/
+
+.owl-theme .owl-controls .owl-page{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+}
+.owl-theme .owl-controls .owl-page span{
+	display: block;
+	width: 12px;
+	height: 12px;
+	margin: 5px 7px;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 0.5;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background: #869791;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+}
+
+/* If PaginationNumbers is true */
+
+.owl-theme .owl-controls .owl-page span.owl-numbers{
+	height: auto;
+	width: auto;
+	color: #FFF;
+	padding: 2px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+/* preloading images */
+.owl-item.loading{
+	min-height: 150px;
+	background: url(AjaxLoader.gif) no-repeat center center
+}
